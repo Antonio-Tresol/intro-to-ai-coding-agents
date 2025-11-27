@@ -1,0 +1,62 @@
+{
+	"name": "Intro to AI Coding Agents",
+	"image": "mcr.microsoft.com/devcontainers/python:3.13-bullseye",
+	"postCreateCommand": "bash .devcontainer/post-create.sh",
+	"features": {
+		"ghcr.io/devcontainers/features/git-lfs:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"ms-toolsai.jupyter",
+				"charliermarsh.ruff",
+				"yzhang.markdown-all-in-one",
+				"catppuccin.catppuccin-vsc",
+				"catppuccin.catppuccin-vsc-icons",
+				"ms-vsliveshare.vsliveshare",
+				"ms-toolsai.datawrangler",
+				"tomoki1207.pdf",
+				"usernamehw.errorlens",
+				"ms-python.vscode-pylance",
+				"tamasfe.even-better-toml"
+			],
+			"settings": {
+				"workbench.sideBar.location": "right",
+				"workbench.colorTheme": "Catppuccin Mocha",
+				"workbench.iconTheme": "catppuccin-mocha",
+				"editor.formatOnSave": true,
+				"editor.bracketPairColorization.enabled": true,
+				"editor.stickyScroll.enabled": true,
+				"editor.minimap.enabled": false,
+				"files.autoSave": "afterDelay",
+				"[python]": {
+					"editor.defaultFormatter": "charliermarsh.ruff",
+					"editor.codeActionsOnSave": {
+						"source.organizeImports": "explicit"
+					}
+				},
+				"ruff.organizeImports": true,
+				"python.analysis.autoImportCompletions": true,
+				"python.analysis.typeCheckingMode": "basic",
+				"python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+				"python.terminal.activateEnvironment": true,
+				"terminal.integrated.defaultProfile.linux": "bash",
+				"terminal.integrated.fontFamily": "'FiraCode Nerd Font', 'Fira Code', monospace",
+				"git.autofetch": true,
+				"git.confirmSync": false,
+				"git.enableSmartCommit": true,
+				"git.suggestSmartCommit": true,
+				"files.trimTrailingWhitespace": true,
+				"files.insertFinalNewline": true,
+				"chat.agent.enabled": true,
+				"github.copilot.chat.agent.runTasks": true,
+				"github.copilot.chat.followCellExecution": true,
+				"github.copilot.chat.enhancedNotebookContext": true,
+				"github.copilot.chat.imageInputs": true,
+				"github.copilot.chat.agent.subAgents": true,
+				"github.copilot.chat.memory.enabled": true
+			}
+		}
+	}
+}
